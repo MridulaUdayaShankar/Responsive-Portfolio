@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #dddddd;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png");
+    
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: #ccc solid 2px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.headerEnc {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.borderRight {
+    border-right: #ccc solid 2px;
+    padding: 5px;
+    margin: 5px;
+}
+.nameLogo {
+    background-color: violet;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.sidebar {
+    padding: 20px;
+    text-align: center;
+    float: right;
+}
+
+h1.pageTitle {
+    padding: 20px;
+    border-bottom: #777 solid 2px;
+    color: violet;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content-section {
+    background-color: #ffffff;
+    border: #dddddd solid 2px;
+    width: 960px;
+    height: 460px;
+    margin: 0 auto;
+}
+
+.contactForm {
+    margin: 0 auto;
+    padding: 20px;
+    width: 900px;
+}
+.inputBox input {
+    display: block;
+    width: 800px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+.inputBox textarea{
+    width:800px;
+    min-height:150px;
+    display: block;
+    margin-bottom: 10px;
+}
+img.profileImage {
+    width: 150px;
+    margin: 20px;
+    float: left;
+}
+
+p.description {
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    color: #777777;
+    margin: 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.portfolioImages {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.gameText1 {
+    position: absolute;
+    width: 180px;
+    left: 243px;
+    bottom: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: teal;
+}
+
+.gameText2 {
+    position: absolute;
+    width: 180px;
+    left: 447px;
+    bottom: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: teal;
+}
+
+.gameText3 {
+    position: absolute;
+    width: 180px;
+    left: 651px;
+    bottom: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: teal;
+}
+
+.gameText4 {
+    position: absolute;
+    width: 180px;
+    left: 243px;
+    bottom: 22%;
+    padding: 10px;
+    text-align: center;
+    background-color: teal;
+}
+
+.gameText5 {
+    position: absolute;
+    width: 180px;
+    left: 447px;
+    bottom: 22%;
+    padding: 10px;
+    text-align: center;
+    background-color: teal;
+}
+
+.game1 {
+    padding: 10px;
+}
+
+.game2 {
+    padding: 10px;
+}
+
+.game3 {
+    padding: 10px;
+}
+
+.game4 {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.game5 {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #666666;
+    border-top: #4aaaa5 solid 5px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .headerEnc {
+        width: 960px;
+    }
+    .nameLogo {
+        display:inline-block;
+        text-align: center;
+        width: 35%;
+        font-size: 20px;
+    }
+    .sidebar{
+        display:block;
+    }
+    .content-section {
+        width: 960px;
+        margin-top: 40px;
+    }
+    .footer {
+        display: block;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .headerEnc {
+        width: 748px;
+    }
+    .nameLogo {
+        display: inline-block;
+        text-align: center;
+        width: 35%;
+        font-size: 20px;
+    }
+    .sidebar {
+        display: block;
+    }
+    .content-section {
+        width: 748px;
+        height: auto;
+        margin: 0 auto;
+    }
+    img.profileImage {
+        display: block;
+        width: 300px;
+        padding: 20px;
+        height: 200px;
+    }
+    .footer {
+        display: block;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main{
+        height: auto;
+        overflow: scroll;
+    }
+    .header {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .headerEnc {
+        width: 100%;
+    }
+    .nameLogo {
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+    .sidebar {
+        display: block;
+        margin: 0px;
+        float: unset;
+    }
+    .content-section {
+        width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+    img.profileImage {
+        display: block;
+        width: 550px;
+        padding: 20px;
+        height: 400px;
+    }
+    .contactForm {
+        text-align: justify;
+        height: auto;
+
+    }
+    .inputBox input{
+        width:60%;
+
+    }
+    .inputBox textarea{
+        width:60%;
+
+    }
+    
+    .footer {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+}
