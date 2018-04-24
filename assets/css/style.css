@@ -57,7 +57,7 @@ h1.pageTitle {
     border: #dddddd solid 2px;
     width: 960px;
     margin:0 auto;
-    margin-bottom: 20px;
+    height: 600px;
 }
 
 .contactForm {
@@ -96,7 +96,7 @@ p.description {
     color: #777777;
     margin: 20px;
     line-height: 20px;
-    text-align: justify;
+    /* text-align:  */
 }
 
 .portfolioImages {
@@ -143,6 +143,8 @@ span.gameText {
     }
     .headerEnc {
         width: 960px;
+        display: block;
+        position: static;
     }
     .nameLogo {
         display:inline-block;
@@ -152,10 +154,19 @@ span.gameText {
     }
     .sidebar{
         display:block;
+        margin-right: 120px;
+        float: right;
     }
     .content-section {
         width: 960px;
-        margin-top: 40px;
+        height: auto;
+        margin: 0 auto;
+    
+    
+    }
+    p.description{
+        padding:10px;
+    
     }
     .footer {
         display: block;
@@ -164,6 +175,7 @@ span.gameText {
 }
 
 @media screen and (max-width: 768px) {
+
     .header {
         display: block;
         position: static;
@@ -178,9 +190,11 @@ span.gameText {
         text-align: center;
         width: 35%;
         font-size: 20px;
+        margin-left: 10px;
     }
     .sidebar {
-        display: block;
+        margin-right:100px;
+        float:right;
     }
     .content-section {
         width: 748px;
@@ -204,8 +218,8 @@ span.gameText {
     }
     img.profileImage {
         display: block;
-        width: 300px;
-        padding: 20px;
+        width: 200px;
+        padding: 10px;
         height: 200px;
     }
     .footer {
@@ -219,7 +233,7 @@ span.gameText {
 @media screen and (max-width: 640px) {
     .main{
         height: auto;
-        overflow: scroll;
+    
     }
     .header {
         display: block;
@@ -242,15 +256,16 @@ span.gameText {
         float: unset;
     }
     .content-section {
-        width: 600px;
+        width: 500px;
         height: auto;
         margin: 0 auto;
+        
     }
     img.profileImage {
         display: block;
-        width: 550px;
+        width: 85%;
         padding: 20px;
-        height: 400px;
+        height: 40%;
     }
     .contactForm {
         width:600px;
