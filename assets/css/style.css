@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-.main {
+body{
+    line-height: 1;
     background-color: #dddddd;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png");
-    
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png);
+    background-repeat: repeat;
 }
-
 .header {
     background-color: #ffffff;
     border-bottom: #ccc solid 2px;
@@ -56,14 +56,18 @@ h1.pageTitle {
     background-color: #ffffff;
     border: #dddddd solid 2px;
     width: 960px;
-    height: 460px;
-    margin: 0 auto;
+    margin:0 auto;
+    margin-bottom: 20px;
 }
 
 .contactForm {
     margin: 0 auto;
     padding: 20px;
     width: 900px;
+    min-height: 400px;
+}
+.inputBox{
+    width:850px;
 }
 .inputBox input {
     display: block;
@@ -78,6 +82,7 @@ h1.pageTitle {
     min-height:150px;
     display: block;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
 }
 img.profileImage {
     width: 150px;
@@ -98,79 +103,27 @@ p.description {
     margin: 0 auto;
     width: 900px;
 }
+span.imgPlaceholder {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+img.game {
+    width: 200px;
+    padding: 10px;
+    position: fixed;
+}
+span.gameText {
 
-.gameText1 {
     position: absolute;
-    width: 180px;
-    left: 243px;
-    bottom: 50%;
-    padding: 10px;
+    z-index: 2;
+    background: orange;
     text-align: center;
-    background-color: teal;
-}
-
-.gameText2 {
-    position: absolute;
+    padding: 10px;
     width: 180px;
-    left: 447px;
-    bottom: 50%;
-    padding: 10px;
-    text-align: center;
-    background-color: teal;
+    margin-top:160px;
+    margin-left: 10px;
 }
-
-.gameText3 {
-    position: absolute;
-    width: 180px;
-    left: 651px;
-    bottom: 50%;
-    padding: 10px;
-    text-align: center;
-    background-color: teal;
-}
-
-.gameText4 {
-    position: absolute;
-    width: 180px;
-    left: 243px;
-    bottom: 22%;
-    padding: 10px;
-    text-align: center;
-    background-color: teal;
-}
-
-.gameText5 {
-    position: absolute;
-    width: 180px;
-    left: 447px;
-    bottom: 22%;
-    padding: 10px;
-    text-align: center;
-    background-color: teal;
-}
-
-.game1 {
-    padding: 10px;
-}
-
-.game2 {
-    padding: 10px;
-}
-
-.game3 {
-    padding: 10px;
-}
-
-.game4 {
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.game5 {
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
 .footer {
     background-color: #666666;
     border-top: #4aaaa5 solid 5px;
@@ -206,7 +159,7 @@ p.description {
     }
     .footer {
         display: block;
-        position: static;
+        position: fixed;
     }
 }
 
@@ -234,6 +187,21 @@ p.description {
         height: auto;
         margin: 0 auto;
     }
+    .contactForm {
+        width:700px;
+    }
+    .inputBox{
+        width:750px;
+    }
+    .inputBox input{
+        width:50%;
+
+    }
+    .inputBox textarea{
+        width:50%;
+        display: block;
+
+    }
     img.profileImage {
         display: block;
         width: 300px;
@@ -242,10 +210,9 @@ p.description {
     }
     .footer {
         display: block;
-        position: relative;
+        position: fixed;
         bottom: 0;
         width: 100%;
-        height: auto;
     }
 }
 
@@ -286,22 +253,26 @@ p.description {
         height: 400px;
     }
     .contactForm {
-        text-align: justify;
-        height: auto;
-
+        width:600px;
+    }
+    .inputBox{
+        width:640px;
     }
     .inputBox input{
-        width:60%;
+        width:50%;
 
     }
     .inputBox textarea{
-        width:60%;
+        width:50%;
+        display: block;
 
     }
-    
+    .portfolioImages{
+        height:auto;    
+    }
     .footer {
         display: block;
         width: 100%;
-        position: relative;
+        position: fixed;
     }
 }
