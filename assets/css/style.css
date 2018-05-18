@@ -4,13 +4,13 @@
 
 body{
     background-color: #dddddd;
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png);
+    background-image: url('https://www.walldevil.com/wallpapers/a18/harmony-blue-windows-background-wallpapers-s7cp2xaoxei-screen-wallpaper-aaaaaaaauae.jpg');
     background-repeat: repeat;
     
 }
 .header {
     background-color: #ffffff;
-    border-bottom: #ccc solid 2px;
+    border-bottom: #4aaaa5 solid 5px;
     height: 60px;
     margin-bottom: 20px;
 }
@@ -33,7 +33,7 @@ a {
     margin: 5px;
 }
 .nameLogo {
-    background-color: rgb(2, 4, 36);
+    background-color: rgb(36, 41, 105);
     color: #ccc;
     font-size: 40px;
     padding: 10px;
@@ -49,7 +49,7 @@ a {
 h1.pageTitle {
     padding: 20px;
     border-bottom: #777 solid 2px;
-    color:  rgb(2, 4, 36);
+    color:  rgb(36, 41, 105);
     font-size: 30px;
     font-family: 'Alegreya Sans', sans-serif;
 }
@@ -110,11 +110,15 @@ p.description {
 .portfolioImages {
     margin: 0 auto;
     width: 900px;
+    padding-top:10px;
+    /* display: block; */
 }
 span.imgPlaceholder {
+    margin: 0 auto;
     display: inline-block;
     width: 200px;
     height: 200px;
+    border: gray solid 1px;
 }
 img.game {
     width: 200px;
@@ -122,17 +126,19 @@ img.game {
     position: fixed;
     border-bottom: 5px;
     display: block;
+
 }
 span.gameText {
-
+    display: block;
     position: absolute;
-    z-index: 2;
-    background: orange;
+    /* z-index: 2; */
+    background: wheat;
     text-align: center;
     padding: 10px;
     width: 180px;
     margin-top:120px;
     margin-left: 10px;
+    border: gray solid 2px;
 }
 .footer {
     border-top: #4aaaa5 solid 5px;
@@ -294,8 +300,14 @@ span.gameText {
         display: block;
 
     }
+    img.game {
+        display: inline;
+        overflow:hidden;
+    }
     .portfolioImages{
-        height:auto;    
+        height: 100%;   
+        display: inline; 
+        overflow:hidden;
     }
     .footer {
         display: block;
