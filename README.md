@@ -1,4 +1,4 @@
-# Project title: Responsiove-Portfolio
+# Responsiove-Portfolio
 
 ## Getting Started
 This is a project to enhance the professional portfolio site with a mobile-responsive layout using media queries in CSS alongwith HTML
